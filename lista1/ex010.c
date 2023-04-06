@@ -2,10 +2,10 @@
 
 int main(){
 
-    int n;
+    float n;
 
     printf("Digite um numero\n");
-    scanf("%i",&n);
+    scanf("%f",&n);
 
     if(n < 0 || n  > 100){
         printf("Fora de intervalo\n");
