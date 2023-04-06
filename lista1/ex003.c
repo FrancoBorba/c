@@ -13,6 +13,6 @@ int main(){
     media = (2*a + 3*b + 5*c)/10;
     printf("MEDIA = %.1f" , media);
 
-    
+    return 0;
 
 }
