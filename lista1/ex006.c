@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<locale.h>
 
 //Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do jogo, sabendo que o mesmo pode começar em um dia e terminar em outro, tendo uma duração mínima de 1 hora e máxima de 24 horas.
 int main(){
@@ -20,7 +21,7 @@ int main(){
         total = (fim+24) - inicio;
     }
 
-    printf("O JOGO DUROU HORA(S) %i\n",total);
+    printf("O JOGO DUROU %i HORA(S)\n",total);
 
     return 0;
 
