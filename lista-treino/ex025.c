@@ -46,5 +46,7 @@ int main(){
         liquido = bruto - descontos;
         printf(" Salario bruto= %f\n Ir= %f\n INSS = %f\n FGTS = %f\n Total de Descontos= %f\n Salario Liquido= %f\n", bruto, imposto,inss,fgts,descontos,liquido);
                     }
+
+    return 0;
 }
 
