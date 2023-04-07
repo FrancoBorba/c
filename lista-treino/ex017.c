@@ -1,6 +1,7 @@
 #include<stdio.h>
+#include<stdlib.h>
 
-// NÃO TÀ FUNCIONANDO
+
 
 int main(){
 
@@ -9,11 +10,11 @@ int main(){
    printf("Digite seu sexo utilizando M ou F \n");
    scanf("%c",&letra);
 
-   if(letra == "M" ){
+   if(letra == 'M' || letra == 'm'){  
     printf("MASCULINO");
                     }
         else{
-                if(letra == "F"){
+                if(letra == 'F' || letra == 'f'){
                 printf("FEMININO");
                                 }
                 else {
