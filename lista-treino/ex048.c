@@ -2,24 +2,24 @@
 
 int main(){
 
-    int i , num1 , num2 , serie , quantidade;
+    int  num1 , num2 , serie ;
 
     num1 = 1;
     num2 =1;
     
-    printf("Digite a quantidade de termos\n");
-    scanf("%i",&quantidade);
+    
     printf("1\n");
     printf("1\n");
-
-    for(i=3 ; i<=quantidade ; i++){
-
+    
+    do
+    {
         serie = num1 + num2;
         num1 = num2;
         num2 = serie;
         printf("%i\n",serie); 
 
-    }
+    } while (serie < 500);
+    
 
 
 }
