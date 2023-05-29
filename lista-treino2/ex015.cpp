@@ -6,7 +6,7 @@ int main(){
 
     int num, resp;
     
-    for(int i =1 ; i<=50 ; i++){
+    for(int i = 1 ; i<=50 ; i++){
         printf("Digite um numero \n");
         scanf("%i",&num);
         resp = absoluto(num);
@@ -18,11 +18,10 @@ int main(){
 int absolto(int n){
 
     if(n >=0){
-        n = n*1;
+        return n;
     }
     else{
-        n = n*-1;
-        
+        return -n;
     }
-    return n;
+    
 }
