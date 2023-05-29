@@ -15,13 +15,14 @@ int main(){
     return 0;
 }
 
-int absolto(int n){
+int absoluto(int n){
 
     if(n >=0){
         return n;
     }
     else{
         return -n;
+        
     }
     
 }
