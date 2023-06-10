@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int primo(int);
+
 int ePrimo(int&);
 
 int main(){
@@ -16,7 +16,15 @@ int main(){
 
 int ePrimo(int& n){
     
-    if(primo(n)== 2){
+int  div ,i;
+    div = 0;
+      for(i=1 ; i <=n ; i++){
+        if(n%i== 0){
+            div++;
+        }
+    }
+
+    if(div == 2){
         printf("NUMERO PRIMO");
         return 0;
     }
@@ -24,17 +32,7 @@ int ePrimo(int& n){
         printf("NAO EH PRIMO");
         return 1;
     }
-
-}
-
-int primo(int num){
-
-    int  div ,i;
-    div = 0;
-      for(i=1 ; i <=num ; i++){
-        if(num%i== 0){
-            div++;
-        }
-    }
     return div;
+
 }
+
