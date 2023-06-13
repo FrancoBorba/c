@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 int encaixa(int, int);
+int segmento(int , int);
 int main(){
 
    int a , b;
@@ -8,15 +9,14 @@ int main(){
     scanf("%i",&a);
     printf("Digite um numero para ver se 'encaixa' \n");
     scanf("%i",&b);
-    encaixa( a , b);
+    //encaixa( a , b);
+    segmento(a,b);
 
 }
 
 int encaixa(int a , int b){
    
    int cont = 0  , compara , analisa = 1, c;
-
-
     c = b;
     do{
 
@@ -24,7 +24,7 @@ int encaixa(int a , int b){
         cont++;
     }while( b != 0);
     
-    printf("%i\n", cont);
+    //printf("%i\n", cont);
 
 
     
@@ -45,3 +45,36 @@ int encaixa(int a , int b){
     return 0;
     
 }  
+
+int segmento(int a , int b){
+
+    int cont = 0  , compara , analisa = 1, c ;
+    
+    c = b;
+    do{
+
+        a = a/10;
+
+    }while((a%10)!=(b%10)); 
+
+    do{
+
+        b = b/10;
+        cont++;
+    }while( b != 0);
+    
+    do{
+        analisa = analisa *10;
+        cont--;
+    }while(cont != 0);
+    compara = a%analisa;
+    printf("%i\n", compara);
+     if(c == compara){
+        printf(" B eh segmento de A \n");
+    }
+    else{
+        printf("B não eh segmento de A \n");
+    }
+
+    return 0;
+}
