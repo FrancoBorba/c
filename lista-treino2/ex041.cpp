@@ -13,7 +13,7 @@ int main(){
     scanf("%s",&b);
    result = proximo(a);
    resp = proximo(b);
-   printf(" O consecutivo foi= %i\n",result);
+    printf(" O consecutivo foi= %i\n",result);
     printf(" O consecutivo foi= %c\n",resp);
    
 
@@ -27,7 +27,7 @@ int main(){
 template<class tipo>
 tipo proximo(tipo x){
 
-    x = x +1;
-    return x ;
+    
+    return x + 1;
 
 }

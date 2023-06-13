@@ -1,10 +1,6 @@
 #include<stdio.h>
 
-
 template < class tipo > void multiplos( tipo& soma, tipo x , int n);
-
-
-
 
 
 int main(){
@@ -20,7 +16,7 @@ int main(){
         scanf("%i",&in1);
         printf("Digite um valor para ver o resultado da soma dos multiplos do valor inicial ate o mesmo\n");
         scanf("%i",&in2);
-          multiplos(isoma , in1  , in2);
+        multiplos(isoma , in1  , in2);
             printf("O resultado foi %i",isoma);
     }
     else{
@@ -36,12 +32,10 @@ int main(){
     
 
 }
-template<class tipo> void multiplos( tipo& soma , tipo x , tipo n){
-
+template<class tipo> void multiplos( tipo& soma , tipo x , int n){
 
    for(int i = 1; i <= n; i++){
         soma += i * x;
    }
-    
-
+  
 }
