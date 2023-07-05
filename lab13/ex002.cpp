@@ -39,7 +39,7 @@ int buscaBinaria( int vet[], int tamanho ,int chave){
     {
         meio = ( ini + fim)/2;
         if(vet[meio] == chave){
-            return ( meio + 1);
+            return ( meio + 1); // retorna a posição
         }
          if (vet[meio] < chave) {
             ini = meio + 1;
