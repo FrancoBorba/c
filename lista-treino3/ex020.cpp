@@ -1,4 +1,5 @@
 #include<stdio.h>
+// n consegui esta merda
  
 int main(){
     int l , c;
