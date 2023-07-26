@@ -23,6 +23,7 @@ int main(){
     s1.append("da");
     s3 += "lhador";
     s5.append(s1 , 2 , s1.size());
+    cout<<s5 << endl;
     s5.append("inha");
     
     cout << " S1:" << s1 << endl;
